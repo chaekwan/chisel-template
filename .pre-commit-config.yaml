@@ -36,13 +36,3 @@ repos:
     rev: 23.3.0
     hooks:
       - id: black
-  # - repo: https://github.com/pre-commit/pre-commit-hooks
-  #   rev: v0.3.0
-  #   hooks: #mix and match any of the following:
-  #     # - id: sbt-fatal-warnings #arguments optional
-  #     #   args: [--scope=test:compile]
-  #     # - id: sbt-unused-imports #includes fatal warnings, arguments optional
-  #     #   args: [--scope=test:compile]
-  #     - id: sbt-scalafmt
-  #     # - id: sbt-wartremover #arguments are optional
-  #     #   args: [--warts=Warts.unsafe, --scope=test:compile]
