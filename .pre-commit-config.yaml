@@ -43,3 +43,5 @@ repos:
         description: run devmoji
         entry: verible-verilog-format --inplace
         language: system
+        types: [file]
+        files: \.sv$
