@@ -1,6 +1,5 @@
 default_language_version:
   node: system
-
 repos:
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v3.3.0
