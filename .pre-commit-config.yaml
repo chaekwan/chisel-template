@@ -12,16 +12,6 @@ repos:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: [] # optional: list of Conventional Commits types to allow e.g. [feat, fix, ci, chore, test]
-  - repo: local
-    hooks:
-      - id: devmoji
-        pass_filenames: false
-        name: devmoji
-        description: run devmoji
-        entry: devmoji --edit
-        language: node
-        additional_dependencies:
-          - "devmoji@2.3.0"
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
@@ -36,3 +26,20 @@ repos:
     rev: 23.3.0
     hooks:
       - id: black
+  - repo: local
+    hooks:
+      - id: devmoji
+        pass_filenames: false
+        name: devmoji
+        description: run devmoji
+        entry: devmoji --edit
+        language: node
+        additional_dependencies:
+          - "devmoji@2.3.0"
+  - repo: local
+    hooks:
+      - id: verible-verilog-format
+        name: verible-verilog-format
+        description: run devmoji
+        entry: verible-verilog-format --inplace
+        language: system
