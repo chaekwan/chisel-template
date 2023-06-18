@@ -44,4 +44,4 @@ repos:
         entry: verible-verilog-format --inplace
         language: system
         types: [file]
-        files: \.sv$
+        files: \.(sv|svh)$
