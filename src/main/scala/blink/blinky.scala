@@ -2,7 +2,7 @@ import chisel3._
 import chisel3.util.Counter
 import circt.stage.ChiselStage
 
-class Blinky(freq: Int, startOn: Boolean = false) extends Module {
+class Blinky(freq: Int, startOn: Boolean = false) extends Module with RequireAsyncReset {
   val io = IO(new Bundle {
     val led0 = Output(Bool())
   })
