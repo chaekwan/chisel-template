@@ -40,8 +40,17 @@ repos:
     hooks:
       - id: verible-verilog-format
         name: verible-verilog-format
-        description: run devmoji
+        description: run verible-verilog-format
         entry: verible-verilog-format --inplace
         language: system
         types: [file]
         files: \.(sv|svh)$
+  - repo: local
+    hooks:
+      - id: scalafmt
+        name: scalafmt
+        description: run scalafmt
+        entry: scalafmt
+        language: system
+        types: [file]
+        files: \.scala$
